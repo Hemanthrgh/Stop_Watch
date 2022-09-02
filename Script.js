@@ -15,6 +15,7 @@ btnStart.addEventListener('click',()=>{
     btnReSet.style.display="inline";
     btnStop.style.display="inline";
     btnStart.style.display="none";
+    clearInterval(Interval);
    Interval= setInterval(()=>{
         centiSec++;
         if(centiSec<10){
@@ -45,7 +46,7 @@ btnStart.addEventListener('click',()=>{
 btnStop.addEventListener('click',()=>{
     btnStop.style.display="none";
     btnStart.style.display="inline";
-    btnReSet.style.display="none";
+    btnReSet.style.display="inline";
     clearInterval(Interval);
 })
 
